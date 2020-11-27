@@ -1,0 +1,22 @@
+{
+  "name": "cli-args-parser-kata",
+  "version": "1.0.0",
+  "description": "Cli args Parser",
+  "main": "main.js",
+  "scripts": {
+    "test": "ava "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nemax23/cli-args-parser-kata.git"
+  },
+  "author": "Massimiliano Battan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nemax23/cli-args-parser-kata/issues"
+  },
+  "homepage": "https://github.com/nemax23/cli-args-parser-kata#readme",
+  "devDependencies": {
+    "ava": "^3.13.0"
+  }
+}
