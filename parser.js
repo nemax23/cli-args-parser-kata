@@ -1,9 +1,8 @@
 
-/**
- * Parse arguments as strings or array. Returns array of parameters
- * @param {*} input
- */
 const getValidInput = (input) => {
+  if (Array.isArray(input)) {
+    return input
+  }
   if (input.startsWith('[') && input.endsWith(']')) {
     const cleanedInput = input.replace(/\s/gi, '')
     return cleanedInput.substring(1, cleanedInput.length - 1).split(',')
@@ -11,10 +10,6 @@ const getValidInput = (input) => {
   return input.split(' ')
 }
 
-/**
- * Parse arguments and returns an Object with parsing result
- * @param {*} input
- */
 const parseInput = (input) => {
   const params = {}
   let lastParam = null
